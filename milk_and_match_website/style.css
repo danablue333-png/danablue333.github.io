@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&family=Outfit:wght@100..900&display=swap');
+
+/*
+font-family: "BJCree", serif;
+font-family: "Outfit", sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: #f6f4ea;
+    padding: 15px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header img {
+  width: 7.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #f6f4ea;
+}
+
+a:hover {
+  color: #ffee8c;
+}
+
+
+.navigation ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 100px;
+            align-items: center;
+            padding: 0;
+        }
+.navigation ul li {
+            font-family: "Outfit", sans-serif;
+            border-radius: 15%;
+            flex: 0 0 180px;
+            font-size: 1.3rem;
+            padding: 18px;
+            text-align: center;
+            font-weight: bold;
+            background: #606c38;
+        }
+
+.body {
+    background-image: url('images/hero_image.png');
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 75px;
+
+}
+
+.body img{
+    margin-left: auto;
+     margin-right: auto;
+    width: 40%;
+    
+    
+}
+
+.body p {
+    font-family: "BJCree", serif;
+    margin: 0 0 60px 0;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body p:nth-of-type(2) {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15%;
+    font-size: 1.3rem;
+    max-width: 180px;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    padding: 18px;
+    background: #606c38;
+    color: #f6f4ea;
+}
+
+.footer {
+    background-color: #f6f4ea;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  height: 80px;
+
+}
+
+.footer p {
+    font-family: "BJCree", serif;
+    font-size: 1.7rem;
+    color: #606c38;
+}
+
+.socials {
+display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Start of menu css*/
+
+.menu_main img {
+    width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.menu_main h2 {
+font-family: "Outfit", sans-serif;
+text-align: center;
+}
+
+.menu_main p {
+text-align: center;
+font-family: "BJCree", serif;
+}
+
+.title {
+    font-size: 2rem;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.title p {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  
+}
+
+.menu_main {
+    padding: 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title title title"
+    "matcha tea coffee";
+    gap:50px;
+}
+
+.menu_main :nth-of-type(1) {
+  grid-area: title;
+}
+
+.menu_main :nth-of-type(2) {
+  grid-area: matcha;
+}
+
+.menu_main :nth-of-type(3) {
+  grid-area: tea;
+}
+
+.menu_main :nth-of-type(4) {
+  grid-area: coffee;
+}
+
+/* Start of Story css */
+
+.story_main {
+padding: 50px 50px 50px 0;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: auto;
+  gap: 150px;
+  grid-template-areas: 
+    "story_nav story"
+}
+
+.story_main :nth-of-type(1) {
+  grid-area: story_nav;
+}
+.story_main :nth-of-type(2) {
+  grid-area: story;
+}
+
+.story_nav {
+    background-color: #606c38;
+    border-radius: 15%;
+    justify-content: center;
+}
+
+.story_nav ul {
+    list-style-type: none;
+   
+}
+
+.story_nav ul li {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8rem;
+    padding: 50px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.story h1 {
+font-family: "Outfit", sans-serif;
+font-size: 3.5rem;
+padding-bottom: 30px;
+text-align: center;
+}
+
+.story img {
+width: 100%
+}
+
+.story p {
+font-size: 1.2rem;
+font-family: "BJCree", serif;
+}
+
+/* Start of contact css*/
+
+.contact_form {
+  display: block;
+  justify-content: center;
+}
+
+.contact_form h1 {
+font-family: "Outfit", sans-serif;
+font-size: 3.5rem;
+padding-bottom: 30px;
+text-align: center;
+}
+
+.contact_form h2 {
+font-family: "BJCree", serif;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 50%;
+}
+
+.contact_form img {
+    width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact_form p {
+font-family: "BJCree", serif;
+font-size: 1.3rem;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 50%;
+}
+
+.contact_info ul {
+  list-style-type: none;
+  background-color: #606c38;
+  color: #f6f4ea;
+  padding: 20px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* responsive css */
+
+@media (max-width: 600px) {
+
+   header {
+    height: 270px;
+    flex-direction: column;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  .navigation ul {
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .navigation ul li {
+            flex: 0 0 150px;
+            font-size: 1rem;
+            padding: 12px;
+  }
+
+        .body img{
+    width: 80%;
+}
+
+.body p {
+    font-size: 1.3rem;
+    max-width: 80%;
+}
+
+.footer {
+  display: block;
+  height: auto;
+    gap: 18px;
+    padding: 25px 20px;
+
+
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.socials {
+ gap: 18px;
+    justify-content: center;
+}
+
+/* story responsive */
+
+.story_main {
+padding: 30px 0;
+  display: block;
+}
+
+.story_nav {
+ 
+  display: flex;
+}
+
+.story_nav ul {
+  display: flex;
+  gap: 50px;
+  height: 100px;
+            
+}
+
+.story_nav ul li {
+  font-size: 1.1rem;
+  padding: 1px;
+}
+
+.story h1 {
+font-size: 3.5rem;
+}
+
+
+.story p {
+font-size: 1rem;
+}
+
+/* menu responsive */
+
+.menu_main {
+    display: block;
+    gap:50px;
+    }
+
+    /* contact responsive*/
+
+.contact_form h1 {
+font-size: 3rem;
+padding-bottom: 0px;
+}
+
+.contact_form h2 {
+width: 90%;
+font-size: 1.3rem;
+padding-bottom: 20px;
+}
+
+.contact_form img {
+    width: 100%;
+}
+
+.contact_form p {
+font-size: 1.1rem;
+width: 90%;
+}
+
+.contact_info ul {
+  padding: 20px;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+  }
+
+
+
+  @media (max-width: 800px) {
+
+   header {
+    height: 270px;
+    flex-direction: column;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  .navigation ul {
+    gap: 25px;
+  }
+
+  .navigation ul li {
+            flex: 0 0 150px;
+            font-size: 1rem;
+            padding: 12px;
+  }
+
+        .body img{
+    width: 75%;
+}
+
+.body p {
+    font-size: 1.3rem;
+    max-width: 80%;
+}
+
+.footer {
+  display: block;
+  height: auto;
+    gap: 18px;
+    padding: 25px 20px;
+
+
+}
+
+.footer p {
+  text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.socials {
+ gap: 28px;
+justify-content: center;
+  }
+
+  .menu_main {
+    display: block;
+    gap:50px;
+    }
+
+.contact_info ul {
+  padding: 30px;
+  line-height: 0px;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+}
+
+ @media (max-width: 1000px) {
+
+ header {
+    height: 300px;
+    flex-direction: column;
+  }
+
+  header img {
+    width: 15%;
+  }
+
+
+  .navigation ul li {
+            flex: 0 0 150px;
+            font-size: 1rem;
+            padding: 12px;
+  }
+
+        .body img{
+    width: 70%;
+}
+
+.body p {
+    font-size: 1.3rem;
+    max-width: 80%;
+}
+
+.footer {
+  display: block;
+  height: auto;
+    gap: 18px;
+    padding: 25px 20px;
+}
+
+.footer p {
+   text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.socials {
+ gap: 18px;
+    justify-content: center;
+}
+
+.contact_info ul {
+  padding: 40px;
+  line-height: 0px;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+.footer p {
+  justify-content:center;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+ }
+
+
+  @media (max-width: 1200px) {
+
+.contact_info ul {
+  gap: 30px;
+}
+
+  }
